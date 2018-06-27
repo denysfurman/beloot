@@ -1,58 +1,131 @@
 @import "vars";
 
+@media only screen and (max-width: 1200px) {
+  .main_getting_item {
 
-/*==========  Desktop First  ==========*/
-
-
-//Extra large: ≥1200px
-@include media-breakpoint-down(xl) {
-
+    height: auto;
+  }
 }
+@media only screen and (max-width: 992px) {
+  .header_nav{
+    display: none;
+  }
+  .nav-trigger{
+    display: inline-block;
+  }
+  .header_nav nav ul {
 
-//Large: ≥992px
-@include media-breakpoint-down(lg) {
+    height: 68px;
+  }
+  .language a b{
+    display: none;
+  }
+  .language-select {
 
+    width: 40px;
+    left: -5px;
+
+  }
+  .language {
+    position: relative;
+    width: 40px;
+  }
+  .current-language>*+* {
+    margin-left: 0;
+  }
+  .button.yellow.free:before {
+
+    right: 0;
+    width: 100%;
+    top: inherit;
+    bottom: -29px;
+  }
+  .button.blue.free:before {
+
+    right: 0;
+    width: 100%;
+    top: inherit;
+    bottom: -29px;
+  }
+  .button{
+    border-radius: 0;
+  }
+  .main_instruction_item>span {
+    position: absolute;
+    left: 0;
+    top: 22px;
+    color: #ffff;
+    width: 163px;
+
+    background-color: rgba(0, 0, 0, 0.79);
+    padding: 6px 10px;
+  }
+  .main_text {
+
+    background-attachment: inherit;
+  }
 }
-
-//Medium: ≥768px
-@include media-breakpoint-down(md) {
-
-}
-
-//Small: ≥576px
-@include media-breakpoint-down(sm) {
-
-}
-
-//Extra small: >0
-@include media-breakpoint-down(xs) {
-
-}
+@media only screen and (max-width: 767px) {
+  .main_text_wr {
+    width: 100%;
+    height: 100%;
 
 
-/*==========  Mobile First  ==========*/
+    height: 100%;
+    padding: 35px 0 74px;
+  }
+  .main_text_wr .title {
+    font-size: 34px;
+  }
+  .main_text_wr p {
+    font-size: 28px;
+  }
+  .main_text_wr ul li {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .main_text_wr ul li i {
+    font-size: 22px;
 
-//Extra small: <576px
-@include media-breakpoint-up(xs) {
+    top: 2px;
 
-}
-
-//Small: ≤576px
-@include media-breakpoint-up(sm) {
-
-}
-
-//Medium: ≤768px
-@include media-breakpoint-up(md) {
-
-}
-
-//Large: ≤992px
-@include media-breakpoint-up(lg) {
-
-}
-
-//Extra large: ≤1200px
-@include media-breakpoint-up(xl) {
+  }
+  .button {
+    outline: 0!important;
+    width: 100%;
+    height: 57px;
+  }
+  .header_logo{
+    img{
+      width: 123px;
+    }
+  }
+  section h2 {
+    color: #555;
+    font-size: 25px;
+  }
+  .footer_bottom_wr {
+    height: auto;
+    padding: 20px 0;
+    width: 100%;
+    flex-direction: column;
+  }
+  .main_getting_item a{
+    flex-direction: column;
+  }
+  .footer_top ul{
+    margin-bottom: 20px;
+  }
+  .header_nav nav ul {
+    padding: 20px;
+    height: auto;
+    flex-direction: column;
+  }
+  .header_nav nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 
 }

@@ -3,6 +3,7 @@
 @import "libs";
 @import "reset";
 @import "header";
+@import "footer";
 @import "page/main";
 
 ::placeholder {
@@ -96,9 +97,11 @@ body {
 	align-content: center;
 	align-items: center;
 	position: relative;
+	cursor: pointer;
 	&.yellow{
 		background-color: #ffdf00;
 		color: #176bcb;
+		letter-spacing: 1px;
 
 		font-size: 24px;
 		font-weight: 700;
@@ -128,7 +131,82 @@ body {
 		}
 
 	}
+	&.blue{
+		background-color: #176bcb;
+		color: #fff;
+		letter-spacing: 1px;
+		font-size: 24px;
+		font-weight: 700;
+		margin-top: 20px;
+		text-transform: uppercase;
+		box-shadow: none;
+		outline: none;
+		border: none;
+
+		&:hover{
+			color: #176bcb;
+			background-color: #ffdf00;
+		}
+		&.free{
+			&:before{
+				content: "It’s Free";
+				color: #176bcb;
+				position: absolute;
+				right: -77px;
+				text-align: center;
+				top: 5px;
+				font-size: 14px;
+				font-weight: 700;
+				line-height: 30px;
+				width: 77px;
+				height: 29px;
+				background-color: #ffdf00;
+
+			}
+		}
+
+	}
 
 }
+.all_pages{
+	position: fixed;
+	top: 20%;
+	right: 0;
+	z-index: 101;
+	&:hover{
+		ul{
+			right: 0;
+		}
+	}
+	.page_point{
+		width: 40px;
+		height: 15px;
+		background-color: #48bcff;
+		cursor: pointer;
+	}
+	ul{
+		background-color: #48bcff;
+		padding: 15px 20px;
+		position: absolute;
+		top: 100%;
+		width: 250px;
+		right: -250px;
+		transition: .4s;
+		max-height: 450px;
+		overflow-y: auto;
+		li{
+			list-style: none;
+			margin-bottom: 5px;
+			font-size: 17px;
+
+			a{
+				color: #fff;
+			}
+		}
+	}
+}
+
+
+
 
 @import "media"; // Always at the end
