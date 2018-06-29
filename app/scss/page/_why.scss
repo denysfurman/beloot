@@ -1,0 +1,96 @@
+.why_start{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+
+  &_left{
+    width: 50%;
+    background-image: url("../img/why_inf.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 200px;
+  }
+  &_right{
+    width: 50%;
+    background-color: #176bcb;
+    min-height: 300px;
+    padding: 50px 30px;
+    &_wr{
+      width: 570px;
+      p{
+        color: #ffffff;
+
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 30px;
+
+      }
+      .button.yellow:hover{
+        background-color: #fff;
+        color: #176bcb;
+      }
+    }
+
+  }
+}
+.page.why{
+  padding: 0;
+}
+
+.why_inf{
+  p{
+    margin-bottom: 25px;
+    font-size: 14px;
+  }
+  h1{
+    margin-bottom: 40px!important;
+  }
+  .why_inf_img{
+    margin-top: -30px;
+  }
+}
+.why_counter{
+  width: 100%;
+  background-image: url("../img/count.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  padding: 80px 0;
+
+}
+
+.counter_wr{
+  display: flex;
+  color: #ffdf00;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  .counter{
+    margin-right: 10px;
+  }
+}
+
+.why_counter_item{
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-content: flex-start;
+  margin-top: 20px;
+  img{
+    margin-right: 30px;
+    width: 80px;
+    object-fit: contain;
+  }
+  .why_counter_item_inf{
+
+    p{
+      font-size: 14px;
+      color: #fff;
+      display: block;
+      margin-top: 5px;
+    }
+
+
+  }
+}

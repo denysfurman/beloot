@@ -1,16 +1,51 @@
 $( document ).ready(function() {
 
 
-    //
+    // mobile menu
     $('.nav-trigger').click(function() {
-
-
-
         $(".header_nav").slideToggle();
         $('.nav-trigger').toggleClass('is-active');
         return false;
     });
-	// language select
+
+    //all page
+    $('.all_pages').click(function() {
+        $('.all_pages').toggleClass('open');
+    });
+
+    //counter
+    $('.counter').each(function() {
+        var $this = $(this),
+            countTo = $this.attr('data-count');
+
+        $('.counter').each(function() {
+            var $this = $(this),
+                countTo = $this.attr('data-count');
+
+            $({ countNum: $this.text()}).animate({
+                    countNum: countTo
+                },
+
+                {
+
+                    duration: 4000,
+                    easing:'linear',
+                    step: function() {
+                        $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function() {
+                        $this.text(this.countNum);
+                        //alert('finished');
+                    }
+
+                });
+
+
+
+        });
+    });
+
+        // language select
     var icon = '<i class="far fa-chevron-down"></i>';
 
     $(document).ready(function(){
@@ -34,6 +69,15 @@ $( document ).ready(function() {
     });
 
 
+
+
+});
+$(document).ready(function() {
+
+    if ($(".results").length > 0) {
+        var resultItems = $('.results');
+        var mixer = mixitup(resultItems);
+    }
 
 
 });

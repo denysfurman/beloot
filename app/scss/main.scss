@@ -5,6 +5,8 @@
 @import "header";
 @import "footer";
 @import "page/main";
+@import "page/thema";
+@import "page/why";
 
 ::placeholder {
 	color: #666;
@@ -173,7 +175,7 @@ body {
 	top: 20%;
 	right: 0;
 	z-index: 101;
-	&:hover{
+	&.open{
 		ul{
 			right: 0;
 		}
@@ -205,7 +207,49 @@ body {
 		}
 	}
 }
+.page{
+	padding: 30px 0 50px;
+	h1{
+		font-size: 36px;
+		text-align: center;
+		margin-bottom: 20px;
+		margin-top: 0;
+	}
+	&.why{
+		padding: 0;
+	}
+	.page_name{
+		height: 360px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:  top;
 
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		padding: 15px;
+		flex-direction: column;
+		width: 100%;
+
+
+		h1{
+			font-size: 60px;
+			font-weight: 300;
+			color: #fff;
+			text-align: center;
+			line-height: 1;
+		}
+		span{
+			color: #ffdf00;
+			text-align: center;
+			font-size: 30px;
+			font-weight: 700;
+			display: block;
+
+		}
+	}
+}
 
 
 
