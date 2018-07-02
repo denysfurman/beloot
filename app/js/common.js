@@ -13,6 +13,13 @@ $( document ).ready(function() {
         $('.all_pages').toggleClass('open');
     });
 
+    // Menu
+    $('.menu-link').click(function(e) {
+        e.preventDefault();
+        $(this).toggleClass('close');
+        $(".lk_menu").slideToggle();
+    });
+
     //counter
     $('.counter').each(function() {
         var $this = $(this),

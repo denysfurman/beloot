@@ -17,3 +17,191 @@
   width: 100%;
   background-color: #f6f7fb;
 }
+
+.price_item{
+  width: 100%;
+  margin-top: -60px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  display: block;
+  margin-bottom: 100px;
+}
+
+.price_wr{
+  padding-bottom: 20px;
+  width: 100%;
+  background-color: #f6f7fb;
+  height: 100%;
+
+}
+
+.price_item_top{
+  height: 162px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  >span{
+    color: #ffffff;
+
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  >p{
+    color: #ffffff;
+
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 30px;
+    span{
+      font-size: 20px;
+    }
+    i{
+      font-size: 25px;
+      position: relative;
+      top: -18px;
+      margin-right: 4px;
+
+    }
+
+  }
+  &.item_1{
+    background-color: #176bcb;
+  }
+  &.item_2{
+    background-color: #2e84e7;
+  }
+  &.item_3{
+    background-color: #5b9fec;
+  }
+
+}
+
+.price_item_main{
+  padding: 40px 60px;
+  p{
+    text-align: center;
+    min-height: 270px;
+    color: #555555;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+
+  }
+  .button.blue{
+    width: 100%;
+    height: 62px;
+    font-size: 20px;
+  }
+}
+.grey_bg{
+  padding: 50px 0;
+  width: 100%;
+  background-color: #f6f7fb;
+  height: 100%;
+
+}
+
+ul.lk_menu{
+  width: 100%;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  li{
+    width: 100%;
+    &:last-child{
+      a{
+        border: none;
+      }
+    }
+  }
+  a{
+    padding:  10px 20px;
+    border-bottom: 1px solid #e1e1e1;
+    width: 100%;
+    color: #176bcb;
+    font-size: 16px;
+    &:hover{
+      background-color: #eeeeee;
+    }
+
+  }
+}
+
+// Transition
+@mixin transition ($properties...) {
+  transition: $properties .3s ease-out;
+  -webkit-transition: $properties .3s ease-out;
+  -moz-transition: $properties .3s ease-out;
+  -ms-transition: $properties .3s ease-out;
+  -o-transition: $properties .3s ease-out;
+}
+
+.menu-link {
+  color: #555;
+  display: inline-block;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  display: none;
+
+
+  &:before {
+    content: "";
+    background: #555;
+    height: 4px;
+    width: 40px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin: 0 0 0 -20px;
+    display: block;
+    @include transition(all);
+  }
+
+  &:after {
+    content: "";
+    background: #555;
+    height: 4px;
+    width: 40px;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin: 0 0 0 -20px;
+    display: block;
+    @include transition(all);
+  }
+
+  &.close {
+    &:before {
+      transform: rotate(45deg);
+      top: -15px;
+      width: 25px;
+      margin: 0 0 0 -13px;
+    }
+    &:after {
+      transform: rotate(-45deg);
+      top: -15px;
+      width: 25px;
+      margin: 0 0 0 -13px;
+    }
+  }
+}
+
+.main_instruction{
+  p.inf{
+    color: #555555;
+    font-family: "Open Sans";
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 40px;
+  }
+}

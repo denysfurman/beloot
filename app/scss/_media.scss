@@ -122,9 +122,28 @@
     width: 100%;
 
   }
+  .price_item{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .price_item_main p{
+    height: 100%;
+    min-height: 100%;
+    margin-bottom: 40px;
+  }
+  .menu-link{
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  ul.lk_menu{
+    margin: 20px 0 50px;
+    display: none;
+  }
 }
 @media only screen and (max-width: 767px) {
-
+  .price_item_main {
+    padding: 32px 25px;
+  }
   .main_text_wr .title {
     font-size: 34px;
   }
@@ -142,6 +161,10 @@
 
     top: 2px;
 
+  }
+  .page .page_name {
+    height: auto;
+    padding: 30px 15px;
   }
   .button {
     outline: 0!important;
