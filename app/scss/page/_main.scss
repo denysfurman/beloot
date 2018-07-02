@@ -70,6 +70,11 @@ section{
 .main_why{
   display: block;
   width: 100%;
+  &.features{
+    .main_why_item{
+      margin-bottom: 40px;
+    }
+  }
   .main_why_item{
     display: flex;
     flex-direction: column;
@@ -92,6 +97,24 @@ section{
       }
     }
     a{
+
+      display: block;
+      &:hover{
+        img{
+          transform: scale(1.2);
+        }
+      }
+      span{
+        color: #176bcb;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+    div.feature_why{
 
       display: block;
       &:hover{

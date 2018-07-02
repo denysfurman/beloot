@@ -208,7 +208,15 @@
   .why_counter_item{
     margin-bottom: 40px;
   }
+  .page .page_name h1 {
+    font-size: 40px;
+  }
+  .page .page_name span {
 
+    font-size: 23px;
+    font-weight: 500;
+    display: block;
+  }
 
 }
 @media only screen and (max-width: 359px) {
